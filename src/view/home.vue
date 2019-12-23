@@ -9,7 +9,7 @@ export default {
   name: 'home',
   data () {
     return {
-      msg: 'chen yue lun'
+      msg: 'chen yue lun +1'
     }
   }
 }
