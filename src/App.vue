@@ -11,6 +11,4 @@ export default {
 </script>
 
 <style>
-  @import url('./assets/css/responsive.css');
-  @import url('./assets/css/normalize.css');
 </style>
