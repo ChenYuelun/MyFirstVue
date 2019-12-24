@@ -1,15 +1,15 @@
 <template>
   <div>
-    <section class="section">
+    <section onclick="judgeJump('Winter')" @click="judgeJump('Winter')" class="section">
       <h2 class="title">Winter</h2>
     </section>
-    <section class="section">
+    <section @click="judgeJump('Spring')" class="section">
       <h2 class="title">Spring</h2>
     </section>
-    <section class="section">
+    <section  @click="judgeJump('Summer')" class="section">
       <h2 class="title">Summer</h2>
     </section>
-    <section class="section">
+    <section  @click="judgeJump('Autumn')" class="section">
       <h2 class="title">Autumn</h2>
     </section>
   </div>
@@ -21,6 +21,22 @@ export default {
   data () {
     return {
       msg: 'chen yue lun +1'
+    }
+  },
+  methods: {
+    judgeJump (season) {
+      console.log('11111111')
+      switch (season) {
+        case 'Winter':
+          this.$router.push('winter')
+          break
+        case 'Spring':
+          break
+        case 'Summer':
+          break
+        case 'Autumn':
+          break
+      }
     }
   }
 }
